@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	//map in cpp which contains keys and values
+	//map<key-type,value-type>var
+	map<int,int>np;//unordered_map<int,int>np;it returns keys and values
+	int i=0;
+	int arr[10]={1,2,2,3,4,2,3,4,1,7};
+	for(i=0;i<10;i++)
+	{
+		np[arr[i]]++; //{1:1,2:1,2:2,3:1,4:1,2:3,3:2,4:2,1:2,7:1}
+	}
+	for(auto it:np)
+	{
+		cout<<it.first<<" "<<it.second<<"\n";
+	}
+	//vector<int>v;
+	//sort(v.begin()v.end(),greater<int>)
+	//np.insert({10,2});
+	//for(auto it:v)
+	//{
+	// cout<<it<<" ";
+   //}
+}
